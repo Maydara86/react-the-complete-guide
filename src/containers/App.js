@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from './App.module.css';
-import Person from './Person/Person';
+import Person from '../components/Persons/Person/Person';
 
 class App extends Component {
   state = {
@@ -35,7 +35,7 @@ class App extends Component {
   render() {
 
     let persons = null;
-    let btnClasses = '';
+    // let btnClasses = '';
 
     if(this.state.showPersons) {
       persons = (
@@ -50,7 +50,7 @@ class App extends Component {
         </div>
       );
 
-      btnClasses = classes.Red;
+      // btnClasses = classes.Red;
     }
 
     let assignedClasses = [];
